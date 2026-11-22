@@ -29,12 +29,6 @@
   --border: #E8E4DF;
   --accent: #DF3329;
 
-  /* The judgement key of the app: the one dark, filled control. */
-  --key: #35312D;
-  --key-hover: #14120F;
-  --key-text: #FFFFFF;
-  --key-stop: #FF6A5E;
-
   --measure: 680px;
   --gutter: 20px;
   --sans: "App Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -48,11 +42,6 @@
     --text-muted: #8B857E;
     --border: #2A2826;
     --accent: #FF6A5E;
-
-    --key: #ECEAE7;
-    --key-hover: #FFFFFF;
-    --key-text: #14120F;
-    --key-stop: #DF3329;
   }
 }
 
@@ -240,38 +229,6 @@ a:focus-visible {
   letter-spacing: -0.012em;
   color: var(--text);
   text-wrap: balance;
-}
-
-/* The one main action: a dark key with the full stop in red. The accent is the stop, never a fill. */
-
-.store {
-  display: inline-flex;
-  align-items: center;
-  min-height: 48px;
-  padding: 0 24px;
-  border-radius: 9999px;
-  background: var(--key);
-  color: var(--key-text);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.store:hover {
-  background: var(--key-hover);
-}
-
-.store:active {
-  transform: scale(0.97);
-}
-
-.store:focus-visible {
-  outline: 2px solid var(--text);
-  outline-offset: 3px;
-  border-radius: 9999px;
-}
-
-.store .full-stop {
-  color: var(--key-stop);
 }
 
 @media (min-width: 600px) {
